@@ -1,15 +1,17 @@
-import React from 'react'
-import { NavBar } from './NavBar'
-import { Input } from '@chakra-ui/react'
-import { Button } from '@chakra-ui/react'
+import React from 'react';
+import { NavBar } from './NavBar';
+import { Input } from '@chakra-ui/react';
+import { Button } from '@chakra-ui/react';
 import {
     FormControl,
     FormLabel,
     FormErrorMessage,
     FormHelperText,
-} from '@chakra-ui/react'
+} from '@chakra-ui/react';
 
-import { useState } from 'react'
+import { useState } from 'react';
+import { BsFacebook } from "react-icons/bs";
+import { AiFillGoogleCircle } from "react-icons/ai";
 
 export const LoginPage = () => {
 
@@ -44,8 +46,14 @@ export const LoginPage = () => {
                                 }
                                 <Button width='300px' colorScheme='teal' className='' >Login</Button>
                                 <p className='font-bold mb-5'>or</p>
-                                <Button width='300px' colorScheme='blue' className=''>Facebook</Button>
-                                <Button width='300px' variant='outline' colorScheme='black' className=''>Google</Button>
+                                <Button width='300px' colorScheme='blue' className=''
+                                    leftIcon={<BsFacebook className='w-5 h-5'/>}>
+                                        Facebook
+                                </Button>
+                                <Button width='300px' variant='outline' colorScheme='black' className=''
+                                    leftIcon={<AiFillGoogleCircle className={'w-6 h-6'}/>}>
+                                        Google
+                                </Button>
                                 <Button width='300px' colorScheme='teal' className='' >Join us</Button>
                             </div>
                         </div>
